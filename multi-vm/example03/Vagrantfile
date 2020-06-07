@@ -1,0 +1,33 @@
+Vagrant.configure("2") do |config|
+
+  vm_name=['web01','mysql01','ftp01']
+
+  vm_name.each do |i|
+    if "#{i}" == 'ftp01' then
+      config.vm.define "#{i}" do |node|
+        node.vm.box = "centos/8"
+      end
+    else
+      config.vm.define "#{i}" do |node|
+        node.vm.box = "centos/7"
+      end
+    end
+  end
+end
+
+# Vagrant.configure("2") do |config|
+#
+#   vm_name=['web01','mysql01','ftp01']
+#
+#   vm_name.each do |i|
+#     if "#{i}" == 'ftp01' OR "#{i}" == 'web01' then
+#       config.vm.define "#{i}" do |node|
+#         node.vm.box = "centos/8"
+#       end
+#     else
+#       config.vm.define "#{i}" do |node|
+#         node.vm.box = "centos/7"
+#       end
+#     end
+#   end
+# end
