@@ -6,7 +6,6 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
-  #config.vm.box = "base"
 
   config.vm.define "web" do |web|
     web.vm.provider "virtualbox" do |vb_web|
