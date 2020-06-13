@@ -1,1 +1,0 @@
-{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/sharad/vagrant_boxes/single_vm/jfrog_artifactory_centos8","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
